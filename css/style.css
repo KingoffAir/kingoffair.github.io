@@ -21,10 +21,42 @@ time, mark, audio, video {
 @font-face {
     font-family: Raleway;
     src: url('/fonts/Raleway-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: RalewayExtra;
+    src: url('/fonts/Raleway-ExtraBold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: RalewayBold;
+    src: url('/fonts/Raleway-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: RalewayBlack;
+    src: url('/fonts/Raleway-Black.ttf');
+    font-weight: bold;
 }
 @font-face {
     font-family: Roboto;
     src: url('/fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url('/fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: RobotoBlack;
+    src: url('/fonts/Roboto-Black.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: RobotoThin;
+    src: url('/fonts/Roboto-Thin.ttf');
+    font-weight: normal;
 }
 body {
     background-color: #f8f8f8;
@@ -90,15 +122,14 @@ footer {
 	flex-wrap: wrap;
     margin: 0 11% 0 11%;
     padding-top: 65px;
-    font-family: Raleway;
     color: #ffffff;
 }
 .footer_top ul li {
     list-style-type: none;
 }
 .footer_top ul li h3 {
+    font-family: RalewayBold;
     font-size: 18px;
-    font-weight: 700;
     text-align: left;
     margin-bottom: 23px;
 }
@@ -107,7 +138,6 @@ footer {
     font-family: Roboto;
     color:  #ffffff;
     font-size: 12px;
-    font-weight: 400;
     line-height: 18px;
     text-align: left;
 }
@@ -122,12 +152,12 @@ footer {
     font-size: 18px;
     font-weight: 700;
     text-align: left;
+    font-family: RobotoBold;
 }
 .newsletter_info {
     font-family: Roboto;
     color:  #f8f8f8;
     font-size: 12px;
-    font-weight: 400;
     line-height: 12px;
     text-align: left;
 }
@@ -138,10 +168,10 @@ footer {
     height: 30px;
     outline: none;
     border: 0;
-    font-family: Roboto;
+    font-family: RobotoThin;
     color:  #333333;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 21px;
     text-align: left;
     padding: 0 0 0 21px;
@@ -266,7 +296,7 @@ input[type="submit"]:active {
 	opacity: 1;
 }
 .header_welcome {
-    font-family: Raleway;
+    font-family: RalewayBold;
     float: left;
     width: 270px;
     height: 300px;
@@ -280,7 +310,6 @@ input[type="submit"]:active {
     padding-left: 25px;
     font-size: 30px;
     text-transform: uppercase;
-    font-weight: 700;
     line-height: 30px;
     text-align: left;
 }
@@ -288,7 +317,6 @@ input[type="submit"]:active {
     padding-top: 24px;
     padding-left: 22px;
     font-size: 18px;
-    font-weight: 700;
     line-height: 14px;
     text-align: left;
     font-style: oblique;
@@ -301,16 +329,15 @@ input[type="submit"]:active {
     font-family: Raleway;
 }
 .jp {
+    font-family: RalewayExtra;
     text-transform: uppercase;
     font-size: 48px;
-    font-weight: 800;
     color: #fff51f;
     line-height: 34px;
     text-align: left;
 }
 .super_easy {
     font-size: 18px;
-    font-weight: 400;
     color: #fff51f;
     line-height: 24px;
     text-align: left;
@@ -318,13 +345,12 @@ input[type="submit"]:active {
 }
 .header_buy {
     margin-left: 61.1%;
-    padding-bottom: 177px;
+    padding-bottom: 179px;
 }
 .header_buy a {
     display: inline-block;
     text-decoration: none;
-    font-family: Raleway;
-    font-weight: 900;
+    font-family: RalewayBlack;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -332,7 +358,7 @@ input[type="submit"]:active {
     width: 124px;
     height: 32px;
     background-color: #fff51f;
-    padding-top: 17px;
+    padding-top: 15px;
 }
 .header_buy a:hover {
     background-color: #eaeaea;
@@ -351,14 +377,13 @@ input[type="submit"]:active {
 nav {
     width: 100%;
     background-color: #26d2fc;
-	font-family: Roboto;
 }
 .nav_menu {
 	display: block;
 	background-color:  #333333;
+    font-family: RobotoBold;
     color:  #ffffff;
     font-size: 14px;
-    font-weight: 500;
     line-height: 32px;
     text-transform: uppercase;
 	padding: 22px 0 12px 40px;
@@ -366,8 +391,8 @@ nav {
 .sidebar_nav {
     display: flex;
     flex-direction: column;
+    font-family: RobotoBlack;
     font-size: 14px;
-    font-weight: 900;
     line-height: 36px;
     text-align: left;
     text-transform: uppercase;
@@ -423,10 +448,9 @@ nav {
 }
 .sidebar_banner_span {
 	display: block;
-	font-family: Raleway;
+	font-family: RalewayBlack;
     color: #333333;
     font-size: 36px;
-    font-weight: 900;
     line-height: 36px;
     text-transform: uppercase;
     font-style: oblique;
@@ -440,10 +464,9 @@ nav {
     background-color: #f8f8f8;
 }
 .new_products, .top_products, .sale_products {
-	font-family: Roboto;
+	font-family: RobotoBlack;
     color: #707070;
     font-size: 22px;
-    font-weight: 900;
     font-style: italic;
     text-align: left;
     text-transform: uppercase;
@@ -493,9 +516,8 @@ figcaption a {
     width: 100%;
     height: 100%;
     text-decoration: none;
-	font-family: Roboto;
+	font-family: RobotoBlack;
 	color:  #333333;
-	font-weight: 900;
 	font-style: italic;
 }
 .new_products_item_name_a {
@@ -734,6 +756,7 @@ figcaption a {
     margin: 0 11% 0 11%;
 	padding-bottom: 60px;
     background-color: #eaeaea;
+    font-family: RobotoBlack;
 }
 .insta_feed {
 	display: flex;
@@ -747,18 +770,14 @@ figcaption a {
 }
 .insta_feed_surf {
     padding-top: 54px;
-    font-family: Roboto;
     color:  #333333;
     font-size: 22px;
-    font-weight: 900;
     font-style: italic;
     text-align: left;
 }
 .insta_feed_surf span {
-    font-family: Roboto;
     color:  #333333;
     font-size: 18px;
-    font-weight: 900;
     font-style: italic;
     text-align: left;
 }
@@ -937,28 +956,25 @@ figcaption a {
     margin-left: 3%;
 }
 .product_info h2 {
-    font-family: Roboto;
+    font-family: RobotoBold;
     text-transform: uppercase;
     font-size: 24px;
-    font-weight: 700;
     color: #353535;
     padding-top: 13px;
 }
 .product_info h3 {
-    font-family: Roboto;
+    font-family: RobotoBold;
     text-transform: uppercase;
     font-size: 22px;
     font-style: italic;
     line-height: 20px;
-    font-weight: 500;
     color: #111111;
     padding-top: 45px;
 }
 .product_info h4 {
-    font-family: Roboto;
+    font-family: RobotoBold;
     color:  #353535;
     font-size: 12px;
-    font-weight: 500;
     line-height: 20px;
     text-transform: uppercase;
 }
@@ -966,7 +982,6 @@ figcaption a {
     font-family: Roboto;
     color:  #707070;
     font-size: 12px;
-    font-weight: 500;
     line-height: 16px;
     padding-top: 2px;
 }
@@ -984,7 +999,6 @@ figcaption a {
     font-family: Roboto;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 400;
     line-height: 20px;
     padding-top: 15px;
     text-align: center;
@@ -1004,10 +1018,9 @@ figcaption a {
     height: 22px;
 	margin-top: 36px;
     margin-left: 18px;
-    font-family: Roboto;
+    font-family: RobotoBold;
     color:  #333333;
     font-size: 11px;
-    font-weight: 500;
     text-align: center;
     transform: scaleY(1.1);
     text-transform: uppercase;
@@ -1031,10 +1044,9 @@ figcaption a {
 }
 .product_like, .product_recently {
 	margin-bottom: 27px;
-	font-family: Raleway;
+	font-family: RalewayExtra;
     color:  #333333;
     font-size: 30px;
-    font-weight: 800;
     text-align: left;
     text-transform: uppercase;
     font-style: oblique;
@@ -1181,10 +1193,9 @@ figcaption a {
 	margin-left: 11px;
 }
 .colum_left p {
-	font-family: Roboto;
+	font-family: RobotoBold;
 	color:  #333333;
 	font-size: 12px;
-	font-weight: 500;
 	padding: 33px 0 10px 3px;
 }
 #name,#email,#company,#subject {
@@ -1207,8 +1218,8 @@ figcaption a {
 	height: 150px;
 }
 #name,#email,#company,#subject[type="text"] {
-	font-family: Roboto;
-	font-weight: 400;
+	font-family: RobotoThin;
+	font-weight: 900;
 	font-size: 12px;
 	text-align: left;
 	padding-left: 18px;
@@ -1223,10 +1234,9 @@ figcaption a {
 	margin: 50px 0 0 26px;
 }
 .colum_right h2 {
-	font-family: Roboto;
+	font-family: RobotoBlack;
 	color:  #353535;
 	font-size: 18px;
-	font-weight: 900;
 	line-height: 14px;
 	text-align: left;
 }
@@ -1252,10 +1262,9 @@ figcaption a {
 	margin-bottom: 22px;
 }
 .address_tel {
-	font-family: Roboto;
+	font-family: RobotoBold;
 	color:  #333333;
 	font-size: 20px;
-	font-weight: 500;
 	line-height: 20.8px;
 	text-align: left;
 }
@@ -1280,7 +1289,7 @@ figcaption a {
 	font-family: Roboto;
 	color:  #333333;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 14px;
 	text-align: left;
 }
