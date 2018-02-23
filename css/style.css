@@ -20,11 +20,11 @@ time, mark, audio, video {
 }
 @font-face {
     font-family: Raleway;
-    src: url('fonts/Raleway-Regular.ttf');
+    src: url('/fonts/Raleway-Regular.ttf');
 }
 @font-face {
     font-family: Roboto;
-    src: url('fonts/Roboto-Regular.ttf');
+    src: url('/fonts/Roboto-Regular.ttf');
 }
 body {
     background-color: #f8f8f8;
