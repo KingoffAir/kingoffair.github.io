@@ -1190,7 +1190,8 @@ figcaption a {
 	margin-top: 29px;
 }
 .colum_left {
-	margin-left: 11px;
+    width: 40.23%;
+    margin-left: 11px;
 }
 .colum_left p {
 	font-family: RobotoBold;
@@ -1205,7 +1206,7 @@ figcaption a {
 	border-color: #efefef;
 	box-sizing: border-box;
 	background-color: #ffffff;
-	width: 350px;
+    width: 100%;
 	height: 27px;
 }
 #sms {
@@ -1214,7 +1215,7 @@ figcaption a {
 	border-color: #efefef;
 	box-sizing: border-box;
 	background-color: #ffffff;
-	width: 350px;
+	width: 100%;
 	height: 150px;
 }
 #name,#email,#company,#subject[type="text"] {
@@ -1305,4 +1306,19 @@ figcaption a {
 }
 .brands_contact_img {
 	padding: 15px 0 0 2%;
+}
+@media screen and (max-width: 1420px) {
+    .item_img_container, .item_img_container_catalog, 
+    .item_img_container_productpage, .item_img_container_contact {
+        display: flex;
+	    flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .new_products, .top_products, .sale_products, .product_like, .product_recently {
+        text-align: center;
+    }
+    .colum_left {
+        width: 70%;
+    }
 }
