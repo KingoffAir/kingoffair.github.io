@@ -1315,10 +1315,12 @@ figcaption a {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .new_products, .top_products, .sale_products, .product_like, .product_recently {
-        text-align: center;
-    }
     .colum_left {
         width: 70%;
+    }
+}
+@media screen and (max-width: 1065px) {
+    .new_products, .top_products, .sale_products, .product_like, .product_recently {
+        text-align: center;
     }
 }
